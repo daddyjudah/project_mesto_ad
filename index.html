@@ -8,7 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <script type="module" crossorigin src="./assets/index-QxI_okaq.js"></script>
+    <link rel="icon" href="./assets/logo-C_QQpFK1.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="./assets/index-D9auPpiv.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
   </head>
   <body class="page">
@@ -55,6 +56,8 @@
                 required
                 minlength="2"
                 maxlength="40"
+                data-regex="^[-A-Za-zА-Яа-яЁё ]+$"
+                data-pattern-message="Введите данные в указанном формате."
               />
               <span class="popup__error" id="user-name-error"></span>
             </label>
@@ -97,6 +100,8 @@
                 required
                 minlength="2"
                 maxlength="30"
+                data-regex="^[-A-Za-zА-Яа-яЁё ]+$"
+                data-pattern-message="Введите данные в указанном формате."
               />
               <span class="popup__error" id="place-name-error"></span>
             </label>
